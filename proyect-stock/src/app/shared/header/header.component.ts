@@ -8,8 +8,10 @@ import { MenuItem } from 'primeng/api';
 })
 export class HeaderComponent implements OnInit {
   items: MenuItem[] | undefined;
+  value:any;
 
   ngOnInit() {
+    this.value = '';
       this.items = [
           {
               label: 'File',
